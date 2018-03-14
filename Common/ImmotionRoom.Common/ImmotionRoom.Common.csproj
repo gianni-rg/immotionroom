@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C867AEB-77D3-4475-B8A7-366CBB0F3A60}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImmotionAR.ImmotionRoom.Common</RootNamespace>
+    <AssemblyName>ImmotionAR.ImmotionRoom.Common</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;PORTABLE;NO_THREADS;NEW_REFLECTION;SYS_RUNTIME</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;PORTABLE;NO_THREADS;NEW_REFLECTION;SYS_RUNTIME</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\Tools\immotionroom_ts.snk.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AutoDiscovery\AutoDiscoverySettings.cs" />
+    <Compile Include="AutoDiscovery\AutoDiscoveryDefaultSettings.cs" />
+    <Compile Include="AutoDiscovery\AutoDiscoveryDiscoverer.cs" />
+    <Compile Include="AutoDiscovery\AutoDiscoveryListener.cs" />
+    <Compile Include="AutoDiscovery\AutoDiscoveryPackets.cs" />
+    <Compile Include="AutoDiscovery\DeviceFoundEventArgs.cs" />
+    <Compile Include="AutoDiscovery\DeviceInfo.cs" />
+    <Compile Include="AutoDiscovery\Enums.cs" />
+    <Compile Include="Helpers\AppVersions.cs" />
+    <Compile Include="Helpers\Exceptions.cs" />
+    <Compile Include="Helpers\Interfaces\IHelpersAppVersions.cs" />
+    <Compile Include="Helpers\Interfaces\IHelpersNetworkTools.cs" />
+    <Compile Include="Helpers\Interfaces\IHelpersRegistry.cs" />
+    <Compile Include="Helpers\Interfaces\IHelpersSystemManagement.cs" />
+    <Compile Include="Helpers\Math\SensoryJointUtilities.cs" />
+    <Compile Include="Helpers\Math\SensoryJointVector3.cs" />
+    <Compile Include="Helpers\Messaging\IExecuteWithObject.cs" />
+    <Compile Include="Helpers\Messaging\IExecuteWithObjectAndResult.cs" />
+    <Compile Include="Helpers\Messaging\IMessenger.cs" />
+    <Compile Include="Helpers\Messaging\Messenger.cs" />
+    <Compile Include="Helpers\Messaging\MessengerService.cs" />
+    <Compile Include="Helpers\Messaging\WeakAction.cs" />
+    <Compile Include="Helpers\Messaging\WeakActionGeneric.cs" />
+    <Compile Include="Helpers\Messaging\WeakFunc.cs" />
+    <Compile Include="Helpers\Messaging\WeakFuncGeneric.cs" />
+    <Compile Include="Helpers\NetworkTools.cs" />
+    <Compile Include="Helpers\Requires.cs" />
+    <Compile Include="Helpers\RegistryTools.cs" />
+    <Compile Include="Helpers\SystemManagement.cs" />
+    <Compile Include="Logger\ILogWatcher.cs" />
+    <Compile Include="Logger\ILoggerConfiguration.cs" />
+    <Compile Include="Logger\ILogger.cs" />
+    <Compile Include="Logger\ILoggerFactory.cs" />
+    <Compile Include="Logger\LoggerBase.cs" />
+    <Compile Include="Logger\LoggerFactoryBase.cs" />
+    <Compile Include="Logger\LogWatcher.cs" />
+    <Compile Include="Logger\LoggerService.cs" />
+    <Compile Include="Logger\NullLogger.cs" />
+    <Compile Include="Logger\NullLoggerFactory.cs" />
+    <Compile Include="Networking\UdpMessageReceivedEventArgs.cs" />
+    <Compile Include="Networking\Interfaces\INetworkClient.cs" />
+    <Compile Include="Networking\Interfaces\INetworkClientFactory.cs" />
+    <Compile Include="Networking\Interfaces\ITcpClient.cs" />
+    <Compile Include="Networking\Interfaces\ITcpClientFactory.cs" />
+    <Compile Include="Networking\Interfaces\ITcpServer.cs" />
+    <Compile Include="Networking\Interfaces\ITcpServerFactory.cs" />
+    <Compile Include="Networking\Interfaces\IUdpClient.cs" />
+    <Compile Include="Networking\Interfaces\IUdpClientFactory.cs" />
+    <Compile Include="Networking\IPAddress.cs" />
+    <Compile Include="Networking\IPEndPoint.cs" />
+    <Compile Include="Networking\NetworkException.cs" />
+    <Compile Include="Networking\ClientConnectedEventArgs.cs" />
+    <Compile Include="Networking\NetworkSocketError.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protocol\Enums.cs" />
+    <Compile Include="Protocol\SensorHandData.cs" />
+    <Compile Include="Protocol\SensorBodyData.cs" />
+    <Compile Include="Protocol\SensorBodyJointData.cs" />
+    <Compile Include="Protocol\SensorBodyJointTypesComparer.cs" />
+    <Compile Include="Protocol\SensorDataFrame.cs" />
+    <Compile Include="Protocol\SensorDataFrameSerializer.cs" />
+    <Compile Include="Protocol\SensorVideoStreamFrame.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

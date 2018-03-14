@@ -1,0 +1,29 @@
+﻿<Window x:Class="ImmotionAR.ImmotionRoom.TrackingService.Views.LogVisualizer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="ImmotionRoom Tracking Service Diagnostic Log" Height="700" Width="1024" ScrollViewer.VerticalScrollBarVisibility="Auto" Icon="/TrackingService;component/Resources/TrackingServiceIcon_OK.ico">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="Show _log file" Command="{Binding ShowLogFileCommand}" />
+                <Separator />
+                <MenuItem Header="_Close" />
+            </MenuItem>
+        </Menu>
+
+        <Grid>
+            <RichTextBox x:Name="LogInfoTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsReadOnly="True" VerticalScrollBarVisibility="Auto" Background="Black" >
+                <RichTextBox.Resources>
+                    <Style TargetType="{x:Type Paragraph}">
+                        <Setter Property="Margin" Value="0"/>
+                    </Style>
+                </RichTextBox.Resources>
+                <FlowDocument />
+            </RichTextBox>
+
+        </Grid>
+    </DockPanel>
+</Window>

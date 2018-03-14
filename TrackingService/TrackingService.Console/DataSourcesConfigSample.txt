@@ -1,0 +1,29 @@
+{
+	"DataSource01": {
+		"Id": "DataSource01",
+		"UniqueId": 1,
+		"DataStreamEndpoint": "192.168.202.229",
+		"DataStreamPort": 5555,
+		"ControlApiEndpoint": "192.168.202.229",
+		"ControlApiPort": 9091,
+		"IsMaster": true
+	},
+	"DataSource02": {
+		"Id": "DataSource02",
+		"UniqueId": 2,
+		"DataStreamEndpoint": "192.168.202.54",
+		"DataStreamPort": 5555,
+		"ControlApiEndpoint": "192.168.202.54",
+		"ControlApiPort": 9091,
+		"IsMaster": false
+	},
+		"DataSource03": {
+		"Id": "DataSource03",
+		"UniqueId": 3,
+		"DataStreamEndpoint": "192.168.202.51",
+		"DataStreamPort": 5555,
+		"ControlApiEndpoint": "192.168.202.51",
+		"ControlApiPort": 9091,
+		"IsMaster": false
+	}
+}

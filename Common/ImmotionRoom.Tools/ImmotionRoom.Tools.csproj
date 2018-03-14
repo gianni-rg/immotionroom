@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD7B62B1-F2F5-46E1-912D-8288877416E6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImmotionAR.ImmotionRoom.Tools</RootNamespace>
+    <AssemblyName>ImmotionAR.ImmotionRoom.Tools</AssemblyName>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ImmotionAR.ImmotionRoom.Tools.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\ImmotionAR.ImmotionRoom.Tools.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseWithLicense|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;LICENSE_ENABLED</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release\ImmotionAR.ImmotionRoom.Tools.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\Tools\immotionroom_ts.snk.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\ImmotionRoom.Common\AutoDiscovery\DataSourceDiscoverer.cs">
+      <Link>Discovery\DataSourceDiscoverer.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Helpers\CrossPlatformSupport\IPlatformAdapterResolver.cs">
+      <Link>CrossPlatformSupport\IPlatformAdapterResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Helpers\CrossPlatformSupport\PlatformAdapter.cs">
+      <Link>CrossPlatformSupport\PlatformAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Helpers\CrossPlatformSupport\PlatformAdapterResolver.cs">
+      <Link>CrossPlatformSupport\PlatformAdapterResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Helpers\Exceptions.cs">
+      <Link>Helpers\Exceptions.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Helpers\Interfaces\IHelpersAppVersions.cs">
+      <Link>Helpers\Interfaces\IHelpersAppVersions.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Helpers\Interfaces\IHelpersNetworkTools.cs">
+      <Link>Helpers\Interfaces\IHelpersNetworkTools.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Helpers\Interfaces\IHelpersSystemManagement.cs">
+      <Link>Helpers\Interfaces\IHelpersSystemManagement.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Helpers\NetworkTools.cs">
+      <Link>Helpers\NetworkTools.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Helpers\Requires.cs">
+      <Link>Helpers\Requires.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Logger\ILoggerConfiguration.cs">
+      <Link>Logger\ILoggerConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Logger\ILogWatcher.cs">
+      <Link>Logger\ILogWatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.Common\Logger\LogWatcher.cs">
+      <Link>Logger\LogWatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\BaseApiClient.cs">
+      <Link>WebApi\DataSource\BaseApiClient.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\BaseRestClientEx.cs">
+      <Link>WebApi\DataSource\BaseRestClientEx.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\DataSourceControlClient.cs">
+      <Link>WebApi\DataSource\DataSourceControlClient.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\IRestClient.cs">
+      <Link>WebApi\DataSource\IRestClient.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\BaseRequest.cs">
+      <Link>WebApi\DataSource\Model\BaseRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\BaseResponse.cs">
+      <Link>WebApi\DataSource\Model\BaseResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\Command.cs">
+      <Link>WebApi\DataSource\Model\Command.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\CommandResult.cs">
+      <Link>WebApi\DataSource\Model\CommandResult.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\CommandStatus.cs">
+      <Link>WebApi\DataSource\Model\CommandStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\DataSourceInfo.cs">
+      <Link>WebApi\DataSource\Model\DataSourceInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\DataSourceServiceStatus.cs">
+      <Link>WebApi\DataSource\Model\DataSourceServiceStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\DataSourceServiceStatusResponse.cs">
+      <Link>WebApi\DataSource\Model\DataSourceServiceStatusResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\Enums\CommandRequestStatus.cs">
+      <Link>WebApi\DataSource\Model\Enums\CommandRequestStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\Enums\CommandType.cs">
+      <Link>WebApi\DataSource\Model\Enums\CommandType.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\Enums\DataSourceState.cs">
+      <Link>WebApi\DataSource\Model\Enums\DataSourceState.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\ErrorResponse.cs">
+      <Link>WebApi\DataSource\Model\ErrorResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\OperationResponse.cs">
+      <Link>WebApi\DataSource\Model\OperationResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\ResultResponse.cs">
+      <Link>WebApi\DataSource\Model\ResultResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\SystemRequest.cs">
+      <Link>WebApi\DataSource\Model\SystemRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\Model\TrackingSessionConfiguration.cs">
+      <Link>WebApi\DataSource\Model\TrackingSessionConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.DataSourceService.Client\WebApiClientException.cs">
+      <Link>WebApi\DataSource\WebApiClientException.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\BaseRestClientEx.cs">
+      <Link>WebApi\BaseRestClientEx.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\AutoDiscoveryParameters.cs">
+      <Link>Discovery\Model\AutoDiscoveryParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\Enums\CommandRequestStatus.cs">
+      <Link>WebApi\Model\Enums\CommandRequestStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\Enums\CommandType.cs">
+      <Link>WebApi\Model\Enums\CommandType.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\Enums\TrackingServiceCalibrationSteps.cs">
+      <Link>WebApi\Model\Enums\TrackingServiceCalibrationSteps.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\Enums\TrackingServiceSceneDataStreamModes.cs">
+      <Link>WebApi\Model\Enums\TrackingServiceSceneDataStreamModes.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\Enums\TrackingServiceState.cs">
+      <Link>WebApi\Model\Enums\TrackingServiceState.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\Enums\TrackingServiceStateErrors.cs">
+      <Link>WebApi\Model\Enums\TrackingServiceStateErrors.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceBodyGesture.cs">
+      <Link>Data\Model\TrackingServiceBodyGesture.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceBodyGestureTypesComparer.cs">
+      <Link>Data\Model\TrackingServiceBodyGestureTypesComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceDataSourceInfo.cs">
+      <Link>WebApi\Model\TrackingServiceDataSourceInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceDataStreamerInfo.cs">
+      <Link>WebApi\Model\TrackingServiceDataStreamerInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceHandData.cs">
+      <Link>Data\Model\TrackingServiceHandData.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceSceneBoundaries.cs">
+      <Link>Data\Model\TrackingServiceSceneBoundaries.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceSceneDescriptor.cs">
+      <Link>Data\Model\TrackingServiceSceneDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceSceneFrame.cs">
+      <Link>Data\Model\TrackingServiceSceneFrame.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceSceneFrameSerializer.cs">
+      <Link>Data\Model\TrackingServiceSceneFrameSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceVector3.cs">
+      <Link>Data\Model\TrackingServiceVector3.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceVector4.cs">
+      <Link>Data\Model\TrackingServiceVector4.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingServiceWalkingGesture.cs">
+      <Link>Data\Model\TrackingServiceWalkingGesture.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingSessionConfiguration.cs">
+      <Link>WebApi\Model\TrackingSessionConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\Model\TrackingSessionDataSourceConfiguration.cs">
+      <Link>WebApi\Model\TrackingSessionDataSourceConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\TrackingServiceSceneDataClient.cs">
+      <Link>Data\TrackingServiceSceneDataClient.cs</Link>
+    </Compile>
+    <Compile Include="..\ImmotionRoom.TrackingService.Client\TrackingServiceSceneFrameReadyEventArgs.cs">
+      <Link>Data\TrackingServiceSceneFrameReadyEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Logger\ILoggerFactory.cs">
+      <Link>Logger\ILoggerFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Logger\LoggerBase.cs">
+      <Link>Logger\LoggerBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Logger\LoggerFactoryBase.cs">
+      <Link>Logger\LoggerFactoryBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Logger\LoggerService.cs">
+      <Link>Logger\LoggerService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Logger\NullLogger.cs">
+      <Link>Logger\NullLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Logger\NullLoggerFactory.cs">
+      <Link>Logger\NullLoggerFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\ClientConnectedEventArgs.cs">
+      <Link>Networking\ClientConnectedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\Interfaces\INetworkClient.cs">
+      <Link>Networking\Interfaces\INetworkClient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\Interfaces\INetworkClientFactory.cs">
+      <Link>Networking\Interfaces\INetworkClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\Interfaces\ITcpClient.cs">
+      <Link>Networking\Interfaces\ITcpClient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\Interfaces\ITcpClientFactory.cs">
+      <Link>Networking\Interfaces\ITcpClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\Interfaces\ITcpServer.cs">
+      <Link>Networking\Interfaces\ITcpServer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\Interfaces\ITcpServerFactory.cs">
+      <Link>Networking\Interfaces\ITcpServerFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\Interfaces\IUdpClient.cs">
+      <Link>Networking\Interfaces\IUdpClient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\Interfaces\IUdpClientFactory.cs">
+      <Link>Networking\Interfaces\IUdpClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\IPAddress.cs">
+      <Link>Networking\IPAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\IPEndPoint.cs">
+      <Link>Networking\IPEndPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\NetworkException.cs">
+      <Link>Networking\NetworkException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\NetworkSocketError.cs">
+      <Link>Networking\NetworkSocketError.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Networking\UdpMessageReceivedEventArgs.cs">
+      <Link>Networking\UdpMessageReceivedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\TrackingServiceControlClient.cs">
+      <Link>WebApi\TrackingServiceControlClient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\AutoDiscoveryDefaultSettings.cs">
+      <Link>Discovery\AutoDiscoveryDefaultSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\AutoDiscoveryDiscoverer.cs">
+      <Link>Discovery\AutoDiscoveryDiscoverer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\AutoDiscoveryListener.cs">
+      <Link>Discovery\AutoDiscoveryListener.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\AutoDiscoveryPackets.cs">
+      <Link>Discovery\AutoDiscoveryPackets.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\DeviceFoundEventArgs.cs">
+      <Link>Discovery\DeviceFoundEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\DeviceInfo.cs">
+      <Link>Discovery\DeviceInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\Enums.cs">
+      <Link>Discovery\Enums.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\Logger\ILogger.cs">
+      <Link>Logger\ILogger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\TrackingServiceBodyData.cs">
+      <Link>Data\Model\TrackingServiceBodyData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\TrackingServiceBodyJointData.cs">
+      <Link>Data\Model\TrackingServiceBodyJointData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\TrackingServiceBodyJointTypesComparer.cs">
+      <Link>Data\Model\TrackingServiceBodyJointTypesComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\TrackingServiceEnums.cs">
+      <Link>Data\Model\TrackingServiceEnums.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\AutoDiscoverySettings.cs">
+      <Link>Discovery\AutoDiscoverySettings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\DataSourcesDiscoveryCompletedEventArgs.cs">
+      <Link>Discovery\DataSourcesDiscoveryCompletedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\Model\DataSourceDiscoveryResult.cs">
+      <Link>Discovery\Model\DataSourceDiscoveryResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\Model\DataSourceItem.cs">
+      <Link>Discovery\Model\DataSourceItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\Model\TrackingServiceDiscoveryResult.cs">
+      <Link>Discovery\Model\TrackingServiceDiscoveryResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\Model\TrackingSystemNetwork.cs">
+      <Link>Discovery\Model\TrackingSystemNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\TrackingServiceDiscoverer.cs">
+      <Link>Discovery\TrackingServiceDiscoverer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.Common\AutoDiscovery\TrackingServiceDiscoveryCompletedEventArgs.cs">
+      <Link>Discovery\TrackingServiceDiscoveryCompletedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\BaseApiClient.cs">
+      <Link>WebApi\BaseApiClient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\IRestClient.cs">
+      <Link>WebApi\IRestClient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\WebApiClientException.cs">
+      <Link>WebApi\Model\WebApiClientException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\BaseRequest.cs">
+      <Link>WebApi\Model\BaseRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\BaseResponse.cs">
+      <Link>WebApi\Model\BaseResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\CalibrationParameters.cs">
+      <Link>WebApi\Model\CalibrationParameters.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\Command.cs">
+      <Link>WebApi\Model\Command.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\CommandResult.cs">
+      <Link>WebApi\Model\CommandResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\CommandStatus.cs">
+      <Link>WebApi\Model\CommandStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\ErrorResponse.cs">
+      <Link>WebApi\Model\ErrorResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\OperationResponse.cs">
+      <Link>WebApi\Model\OperationResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\ResultResponse.cs">
+      <Link>WebApi\Model\ResultResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\SystemRequest.cs">
+      <Link>WebApi\Model\SystemRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\TrackingServiceStatus.cs">
+      <Link>WebApi\Model\TrackingServiceStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\TrackingServiceStatusResponse.cs">
+      <Link>WebApi\Model\TrackingServiceStatusResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Common\ImmotionRoom.TrackingService.Client\Model\TrackingServiceUpdateStateResult.cs">
+      <Link>WebApi\Model\TrackingServiceUpdateStateResult.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.2\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLStorage, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Licensing\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

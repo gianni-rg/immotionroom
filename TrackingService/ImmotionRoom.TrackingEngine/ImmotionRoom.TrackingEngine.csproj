@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84058824-7750-46C8-B76D-3D8C10C416B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImmotionAR.ImmotionRoom.TrackingEngine</RootNamespace>
+    <AssemblyName>ImmotionAR.ImmotionRoom.TrackingEngine</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\Tools\immotionroom_ts.snk.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Common\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="3rdParty\JointsPositionDoubleExponentialFilter.cs" />
+    <Compile Include="3rdParty\JointsPositionDoubleExponentialFilter2.cs" />
+    <Compile Include="3rdParty\TransformSmoothParameters.cs" />
+    <Compile Include="Calibration\BodySkeletonAligner.cs" />
+    <Compile Include="Calibration\DataSourcesCalibrator.cs" />
+    <Compile Include="Calibration\DataSourcesCalibratorSelective.cs" />
+    <Compile Include="Calibration\MasterDataSourceCalibrator.cs" />
+    <Compile Include="Calibration\MasterSlaveDataSourcesCalibrator.cs" />
+    <Compile Include="Interfaces\IBodyDataProvider.cs" />
+    <Compile Include="Model\BodyBoneMap.cs" />
+    <Compile Include="Model\BodyHandData.cs" />
+    <Compile Include="Model\BodyData.cs" />
+    <Compile Include="Model\BodyDataExtensions.cs" />
+    <Compile Include="Model\Boundaries.cs" />
+    <Compile Include="Model\SceneFrame.cs" />
+    <Compile Include="Model\BodyEnums.cs" />
+    <Compile Include="Model\BodyJointData.cs" />
+    <Compile Include="Model\BodyJointTypesComparer.cs" />
+    <Compile Include="Model\CalibrationSettings.cs" />
+    <Compile Include="Model\DataSourcesCalibrationData.cs" />
+    <Compile Include="Model\Enums.cs" />
+    <Compile Include="Model\MathConstants.cs" />
+    <Compile Include="Model\MathExtensions.cs" />
+    <Compile Include="Model\MatricesQueue.cs" />
+    <Compile Include="Model\Matrix4x4.cs" />
+    <Compile Include="Model\Quaternion.cs" />
+    <Compile Include="Model\StepDetectedData.cs" />
+    <Compile Include="Model\StepDetectorParams.cs" />
+    <Compile Include="Model\BodyGesture.cs" />
+    <Compile Include="Model\BodyGestureTypesComparer.cs" />
+    <Compile Include="Model\Vector2.cs" />
+    <Compile Include="Model\Vector3.cs" />
+    <Compile Include="Model\Vector4.cs" />
+    <Compile Include="Model\WalkingDetectionConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\FancyUtilities.cs" />
+    <Compile Include="Tools\LanguageUtilities.cs" />
+    <Compile Include="Tools\PointsTransformCalculator.cs" />
+    <Compile Include="Tracking\BodyDataForStableMarriage.cs" />
+    <Compile Include="Tracking\BodyDataHistory.cs" />
+    <Compile Include="Tracking\BodyMarrier.cs" />
+    <Compile Include="Tracking\DataSourcesPeopleTracker.cs" />
+    <Compile Include="Tracking\JointAngularReliabilityInfo.cs" />
+    <Compile Include="Tracking\JointConfidenceCalculator.cs" />
+    <Compile Include="Tracking\JointConfidenceCalculator2.cs" />
+    <Compile Include="Tracking\BaseMergingBody.cs" />
+    <Compile Include="Tracking\MergingBody.cs" />
+    <Compile Include="Tracking\MergingBodyPro.cs" />
+    <Compile Include="Tracking\MergingBodyReliable.cs" />
+    <Compile Include="Tracking\TemporaryMarriage.cs" />
+    <Compile Include="Walking\Common\IDebugDictionarable.cs" />
+    <Compile Include="Walking\SingleKneeAnalysis\BodyJointCineticInfo.cs" />
+    <Compile Include="Walking\SingleKneeAnalysis\IKneeWalkingDetector.cs" />
+    <Compile Include="Walking\SingleKneeAnalysis\KneeWalkingDetection.cs" />
+    <Compile Include="Walking\SingleKneeAnalysis\KneeWalkingDetector.cs" />
+    <Compile Include="Walking\SingleKneeAnalysis\KneeWalkingDetectorParams.cs" />
+    <Compile Include="Walking\SingleKneeAnalysis\KneeWalkingStatus.cs" />
+    <Compile Include="Walking\SingleKneeAnalysis\SpikesKneeWalkingDetector.cs" />
+    <Compile Include="Walking\Utils\DataHistoryList.cs" />
+    <Compile Include="Model\MathUtilities.cs" />
+    <Compile Include="Walking\WalkingAnalysis\PlayerWalkingDetectorFactory.cs" />
+    <Compile Include="Walking\WalkingAnalysis\IPlayerWalkingDetector.cs" />
+    <Compile Include="Walking\WalkingAnalysis\KnaivePlayerWalkingDetector.cs" />
+    <Compile Include="Walking\WalkingAnalysis\KnaivePlayerWalkingDetectorParams.cs" />
+    <Compile Include="Walking\WalkingAnalysis\PlayerMovingStatus.cs" />
+    <Compile Include="Walking\WalkingAnalysis\PlayerWalkingDetection.cs" />
+    <Compile Include="Walking\WalkingAnalysis\PlayerWalkingDetector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Meta.Numerics">
+      <HintPath>..\..\3rdParty\Libraries\Meta.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ImmotionRoom.Common\ImmotionRoom.Common.csproj">
+      <Project>{5c867aeb-77d3-4475-b8a7-366cbb0f3a60}</Project>
+      <Name>ImmotionRoom.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

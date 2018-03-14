@@ -1,0 +1,20 @@
+﻿<Window x:Class="ImmotionAR.ImmotionRoom.DataSourceService.LogVisualizer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImmotionAR.ImmotionRoom.DataSourceService"
+        mc:Ignorable="d"
+        Title="LogVisualizer" Height="300" Width="300">
+    <Grid>
+        <RichTextBox x:Name="LogInfoTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="Margin" Value="0"/>
+                </Style>
+            </RichTextBox.Resources>
+            <FlowDocument />
+        </RichTextBox>
+
+    </Grid>
+</Window>

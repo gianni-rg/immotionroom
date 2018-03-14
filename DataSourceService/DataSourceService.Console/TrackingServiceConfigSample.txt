@@ -1,0 +1,7 @@
+{
+	"Id": "TrackingService01",
+	"DataStreamEndpoint": "192.168.202.54",
+	"DataStreamPort": 8888,
+	"ControlApiEndpoint": "192.168.202.54",
+	"ControlApiPort": 9090
+}

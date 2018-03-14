@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0CC0193-67B0-4425-AE20-EA09F62BB0CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImmotionAR.ImmotionRoom.TrackingService</RootNamespace>
+    <AssemblyName>ImmotionAR.ImmotionRoom.TrackingService</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\Tools\immotionroom_ts.snk.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <ProjectReference Include="..\..\Common\ImmotionRoom.Common\ImmotionRoom.Common.csproj">
+      <Project>{5c867aeb-77d3-4475-b8a7-366cbb0f3a60}</Project>
+      <Name>ImmotionRoom.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\ImmotionRoom.DataSourceService.Client\ImmotionRoom.DataSourceService.Client.csproj">
+      <Project>{e1b24157-e813-480c-b296-dcfe0bf24911}</Project>
+      <Name>ImmotionRoom.DataSourceService.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\ImmotionRoom.TrackingService.Client\ImmotionRoom.TrackingService.Client.csproj">
+      <Project>{dbd17c30-387b-401e-a344-a6e535fc9657}</Project>
+      <Name>ImmotionRoom.TrackingService.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImmotionRoom.TrackingEngine\ImmotionRoom.TrackingEngine.csproj">
+      <Project>{84058824-7750-46c8-b76d-3d8c10c416b5}</Project>
+      <Name>ImmotionRoom.TrackingEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Common\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Model\TrackingServiceStatusChangedEventArgs.cs" />
+    <Compile Include="Model\Enums\BodyTrackingServiceState.cs" />
+    <Compile Include="Model\Enums\CommandRequestStatus.cs" />
+    <Compile Include="Model\Enums\CommandType.cs" />
+    <Compile Include="Model\SceneDescriptor.cs" />
+    <Compile Include="Model\Enums\TrackingServiceCalibrationSteps.cs" />
+    <Compile Include="Model\Enums\TrackingServiceSceneDataStreamModes.cs" />
+    <Compile Include="Model\Enums\TrackingServiceStateErrors.cs" />
+    <Compile Include="Model\SetSceneDescriptorEventArgs.cs" />
+    <Compile Include="SceneDataStreamer.cs" />
+    <Compile Include="CommandProcessor.cs" />
+    <Compile Include="Infrastructure\Network\DataSourceClient.cs" />
+    <Compile Include="Infrastructure\Network\DataSourceControl.cs" />
+    <Compile Include="Infrastructure\Network\Mappers.cs" />
+    <Compile Include="Interfaces\IBodyTrackingService.cs" />
+    <Compile Include="Interfaces\ICommandProcessor.cs" />
+    <Compile Include="Interfaces\IConfigurationService.cs" />
+    <Compile Include="Interfaces\IDataSourceControl.cs" />
+    <Compile Include="Interfaces\IDataSourceService.cs" />
+    <Compile Include="Interfaces\IDataStreamerService.cs" />
+    <Compile Include="Interfaces\INetworkDiscoveryService.cs" />
+    <Compile Include="Interfaces\ITrackingService.cs" />
+    <Compile Include="Model\SceneDataStreamerInfo.cs" />
+    <Compile Include="Model\AutoDiscoveryParameters.cs" />
+    <Compile Include="Model\CalibrationParameters.cs" />
+    <Compile Include="Model\Command.cs" />
+    <Compile Include="Model\CommandRequestEventArgs.cs" />
+    <Compile Include="Model\CommandResultRequest.cs" />
+    <Compile Include="Model\CommandResult.cs" />
+    <Compile Include="Model\CommandStatus.cs" />
+    <Compile Include="Model\DataFrameReadyEventArgs.cs" />
+    <Compile Include="Model\DataSourceCollection.cs" />
+    <Compile Include="Model\DataSourceCalibrationData.cs" />
+    <Compile Include="Model\DataSourceFoundEventArgs.cs" />
+    <Compile Include="Model\DataSourceInfo.cs" />
+    <Compile Include="Model\DataSourceStatusChangedEventArgs.cs" />
+    <Compile Include="Model\EnableAutoDiscoveryEventArgs.cs" />
+    <Compile Include="Model\Enums\TrackingServiceState.cs" />
+    <Compile Include="Model\ExecuteCalibrationStepEventArgs.cs" />
+    <Compile Include="Model\GetServiceStatusEventArgs.cs" />
+    <Compile Include="Model\SetMasterDataSourceEventArgs.cs" />
+    <Compile Include="Model\StartCalibrationEventArgs.cs" />
+    <Compile Include="Model\StartDiagnosticModeEventArgs.cs" />
+    <Compile Include="Model\StartTrackingSystemEventArgs.cs" />
+    <Compile Include="Model\StopCalibrationEventArgs.cs" />
+    <Compile Include="Model\StopDiagnosticModeEventArgs.cs" />
+    <Compile Include="Model\StopTrackingSystemEventArgs.cs" />
+    <Compile Include="Model\SystemRebootEventArgs.cs" />
+    <Compile Include="Model\TrackingServiceBodyStreamModesComparer.cs" />
+    <Compile Include="Model\TrackingSessionDataSourceConfiguration.cs" />
+    <Compile Include="Model\TrackingSessionDefaultConfiguration.cs" />
+    <Compile Include="Model\TrackingSessionConfiguration.cs" />
+    <Compile Include="Model\TrackingServiceConfiguration.cs" />
+    <Compile Include="Model\TrackingServiceDefaultSettings.cs" />
+    <Compile Include="Model\TrackingServiceStatus.cs" />
+    <Compile Include="Model\UpdateStateResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\BodyTrackingService.cs" />
+    <Compile Include="Services\ConfigurationService.cs" />
+    <Compile Include="Services\DataSourceService.cs" />
+    <Compile Include="Services\NetworkDiscoveryService.cs" />
+    <Compile Include="TrackingService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLStorage, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions, Version=1.0.2.0, Culture=neutral, PublicKeyToken=286fe515a2c35b64, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
