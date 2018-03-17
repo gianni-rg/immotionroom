@@ -1,0 +1,3 @@
+[submodule "3rdParty/Numerics-v2"]
+	path = 3rdParty/Numerics-v2
+	url = https://github.com/gianni-rg/metanumerics.git
