@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2011
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmotionRoom.LittleBoots.SkeletalTracking", "ImmotionRoom.LittleBoots\VisualStudio\SkeletalTracking\ImmotionRoom.LittleBoots.SkeletalTracking.csproj", "{E941BA3D-6E7B-44A9-B056-4046EE18B0CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{2C95E776-A897-4E81-A547-8BAA54531CC2}"
+	ProjectSection(SolutionItems) = preProject
+		ImmotionRoom.LittleBoots\Docs\readme.txt = ImmotionRoom.LittleBoots\Docs\readme.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmotionRoom.Tools.Unity3d", "Unity3d\ImmotionRoom.Tools.Unity3d\ImmotionRoom.Tools.Unity3d.csproj", "{FCE8590D-7EAA-41AF-9405-93ACF9D0D9C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmotionRoom.LittleBoots.SkeletalTracking.Editor", "ImmotionRoom.LittleBoots\VisualStudio\SkeletalTracking.Editor\ImmotionRoom.LittleBoots.SkeletalTracking.Editor.csproj", "{BAA31FAA-1689-4611-841B-BF81A84F801C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmotionRoom.LittleBoots.Avateering", "ImmotionRoom.LittleBoots\VisualStudio\Avateering\ImmotionRoom.LittleBoots.Avateering.csproj", "{DFD01EC7-AB1D-4C78-9B17-4EC2499E29E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmotionRoom.LittleBoots.Avateering.Editor", "ImmotionRoom.LittleBoots\VisualStudio\Avateering.Editor\ImmotionRoom.LittleBoots.Avateering.Editor.csproj", "{476DB9B8-797F-4B43-B19A-7F066D211521}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{67CF5C65-74F1-41B3-88C1-F7273E1D0699}"
+	ProjectSection(SolutionItems) = preProject
+		ImmotionRoom.LittleBoots\Common\SharedAssemblyInfo.cs = ImmotionRoom.LittleBoots\Common\SharedAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmotionRoom.LittleBoots.Avateering.Uma", "ImmotionRoom.LittleBoots\VisualStudio\UmaAvateering\ImmotionRoom.LittleBoots.Avateering.Uma.csproj", "{75186172-D371-400F-96F5-6AA739A377D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmotionRoom.LittleBoots.Avateering.Uma.Editor", "ImmotionRoom.LittleBoots\VisualStudio\UmaAvateering.Editor\ImmotionRoom.LittleBoots.Avateering.Uma.Editor.csproj", "{106FA87B-2786-44D1-8648-833DCAA0FC72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmotionRoom.LittleBoots.Management", "ImmotionRoom.LittleBoots\VisualStudio\Management\ImmotionRoom.LittleBoots.Management.csproj", "{BDD6B4D7-4745-47C3-8176-E4E8C377B7A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmotionRoom.LittleBoots.Management.Editor", "ImmotionRoom.LittleBoots\VisualStudio\Management.Editor\ImmotionRoom.LittleBoots.Management.Editor.csproj", "{6C1483E7-0661-47F8-99F8-FD84486A5E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmotionRoom.LittleBoots.VR", "ImmotionRoom.LittleBoots\VisualStudio\VR\ImmotionRoom.LittleBoots.VR.csproj", "{8B762CC0-B3AF-4EE7-8A10-D6EA0EECC8DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmotionRoom.LittleBoots.VR.Editor", "ImmotionRoom.LittleBoots\VisualStudio\VR.Editor\ImmotionRoom.LittleBoots.VR.Editor.csproj", "{B53FA1E3-7BCC-472B-96D2-FE491ABE95B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E941BA3D-6E7B-44A9-B056-4046EE18B0CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E941BA3D-6E7B-44A9-B056-4046EE18B0CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E941BA3D-6E7B-44A9-B056-4046EE18B0CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E941BA3D-6E7B-44A9-B056-4046EE18B0CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCE8590D-7EAA-41AF-9405-93ACF9D0D9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE8590D-7EAA-41AF-9405-93ACF9D0D9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCE8590D-7EAA-41AF-9405-93ACF9D0D9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCE8590D-7EAA-41AF-9405-93ACF9D0D9C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAA31FAA-1689-4611-841B-BF81A84F801C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAA31FAA-1689-4611-841B-BF81A84F801C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAA31FAA-1689-4611-841B-BF81A84F801C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAA31FAA-1689-4611-841B-BF81A84F801C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD01EC7-AB1D-4C78-9B17-4EC2499E29E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD01EC7-AB1D-4C78-9B17-4EC2499E29E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD01EC7-AB1D-4C78-9B17-4EC2499E29E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD01EC7-AB1D-4C78-9B17-4EC2499E29E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{476DB9B8-797F-4B43-B19A-7F066D211521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476DB9B8-797F-4B43-B19A-7F066D211521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476DB9B8-797F-4B43-B19A-7F066D211521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{476DB9B8-797F-4B43-B19A-7F066D211521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75186172-D371-400F-96F5-6AA739A377D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75186172-D371-400F-96F5-6AA739A377D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75186172-D371-400F-96F5-6AA739A377D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75186172-D371-400F-96F5-6AA739A377D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106FA87B-2786-44D1-8648-833DCAA0FC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106FA87B-2786-44D1-8648-833DCAA0FC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106FA87B-2786-44D1-8648-833DCAA0FC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106FA87B-2786-44D1-8648-833DCAA0FC72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD6B4D7-4745-47C3-8176-E4E8C377B7A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD6B4D7-4745-47C3-8176-E4E8C377B7A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD6B4D7-4745-47C3-8176-E4E8C377B7A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD6B4D7-4745-47C3-8176-E4E8C377B7A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C1483E7-0661-47F8-99F8-FD84486A5E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1483E7-0661-47F8-99F8-FD84486A5E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1483E7-0661-47F8-99F8-FD84486A5E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1483E7-0661-47F8-99F8-FD84486A5E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B762CC0-B3AF-4EE7-8A10-D6EA0EECC8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B762CC0-B3AF-4EE7-8A10-D6EA0EECC8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B762CC0-B3AF-4EE7-8A10-D6EA0EECC8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B762CC0-B3AF-4EE7-8A10-D6EA0EECC8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53FA1E3-7BCC-472B-96D2-FE491ABE95B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53FA1E3-7BCC-472B-96D2-FE491ABE95B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53FA1E3-7BCC-472B-96D2-FE491ABE95B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53FA1E3-7BCC-472B-96D2-FE491ABE95B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC39E85B-E420-49B8-88A3-638A9E2D1520}
+	EndGlobalSection
+EndGlobal

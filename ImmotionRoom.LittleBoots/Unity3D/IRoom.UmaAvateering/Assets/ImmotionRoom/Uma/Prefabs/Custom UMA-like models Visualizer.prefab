@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &160122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 459962}
+  - 114: {fileID: 11409406}
+  - 114: {fileID: 11425384}
+  m_Layer: 0
+  m_Name: Custom UMA-like models Visualizer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &459962
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11409406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -277180900, guid: b7c3837d2904b984f9078de60b0d4e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrackPosition: 1
+  ShadowsEnabled: 1
+  AvatarGenerator: {fileID: 11425384}
+  AttachColliders: 0
+  CalibratePhysiognomy: 1
+  IgnoreBoundsCheck: 0
+--- !u!114 &11425384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6de750cc0d37e448ac17f39a626ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UmaKit: {fileID: 0}
+  UmaKitIsPrefab: 0
+  UmaCompliantAvatar: {fileID: 180902, guid: f32422202e04dec47b2feed7d1491ac1, type: 2}
+  UmaCompliantAvatarInTPose: {fileID: 180902, guid: f32422202e04dec47b2feed7d1491ac1,
+    type: 2}
+  AvatarJointMappingsFile: FemaleUnifiedMappings
+  LoadJointMappingsFromFile: 1
+  m_jointMappingsKeys: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f00000030000000310000003600000037000000380000003900000032000000330000003400000035000000
+  m_jointMappingsValues:
+  - UMA_Female_Rig
+  - UMA_Female_Rig/Global/Position
+  - UMA_Female_Rig/Global/Position/Hips
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/Neck
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/Neck/Head
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/Neck/Head/LeftEye
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/Neck/Head/RightEye
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightForeArmTwist
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger01_01
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger01_01/RightHandFinger01_02
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger01_01/RightHandFinger01_02/RightHandFinger01_03
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger02_01
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger02_01/RightHandFinger02_02
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger02_01/RightHandFinger02_02/RightHandFinger02_03
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger03_01
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger03_01/RightHandFinger03_02
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger03_01/RightHandFinger03_02/RightHandFinger03_03
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger04_01
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger04_01/RightHandFinger04_02
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger04_01/RightHandFinger04_02/RightHandFinger04_03
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger05_01
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger05_01/RightHandFinger05_02
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHandFinger05_01/RightHandFinger05_02/RightHandFinger05_03
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftForeArmTwist
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger01_01
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger01_01/LeftHandFinger01_02
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger01_01/LeftHandFinger01_02/LeftHandFinger01_03
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger02_01
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger02_01/LeftHandFinger02_02
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger02_01/LeftHandFinger02_02/LeftHandFinger02_03
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger03_01
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger03_01/LeftHandFinger03_02
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger03_01/LeftHandFinger03_02/LeftHandFinger03_03
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger04_01
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger04_01/LeftHandFinger04_02
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger04_01/LeftHandFinger04_02/LeftHandFinger04_03
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger05_01
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger05_01/LeftHandFinger05_02
+  - UMA_Female_Rig/Global/Position/Hips/LowerBack/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandFinger05_01/LeftHandFinger05_02/LeftHandFinger05_03
+  - UMA_Female_Rig/Global/Position/Hips/RightUpLeg
+  - UMA_Female_Rig/Global/Position/Hips/RightUpLeg/RightLeg
+  - UMA_Female_Rig/Global/Position/Hips/RightUpLeg/RightLeg/RightFoot
+  - UMA_Female_Rig/Global/Position/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+  - UMA_Female_Rig/Global/Position/Hips/LeftUpLeg
+  - UMA_Female_Rig/Global/Position/Hips/LeftUpLeg/LeftLeg
+  - UMA_Female_Rig/Global/Position/Hips/LeftUpLeg/LeftLeg/LeftFoot
+  - UMA_Female_Rig/Global/Position/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: CalibratePhysiognomy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: ShadowsEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 160122}
+  m_IsPrefabParent: 1

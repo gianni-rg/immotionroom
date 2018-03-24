@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E941BA3D-6E7B-44A9-B056-4046EE18B0CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImmotionAR.ImmotionRoom.LittleBoots.SkeletalTracking</RootNamespace>
+    <AssemblyName>ImmotionRoom.LittleBoots.SkeletalTracking</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ImmotionRoom.LittleBoots.SkeletalTracking.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\ImmotionRoom.LittleBoots.SkeletalTracking.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsyncBridge.Net35, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b3b1c0202c0d6a87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Unity3d\Libraries\AsyncBridge.Net35.0.2.0\lib\net35-Client\AsyncBridge.Net35.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Unity3d\Libraries\RestSharp.105.2.3\lib\net35\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Threading, Version=1.0.2856.102, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Unity3d\Libraries\TaskParallelLibrary.1.0.2856.0\lib\Net35\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Unity3d\Libraries\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>..\..\..\Unity3d\Libraries\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\Unity3d\Libraries\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Common\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Common\DoNotDestroy.cs" />
+    <Compile Include="Common\LogLevelSetting.cs" />
+    <Compile Include="Common\TrackingServiceConstants.cs" />
+    <Compile Include="Common\EventBasedBehaviourUIExecutor.cs" />
+    <Compile Include="TrackingServiceManagement\DataSourcesManagement\BodyDataProvider.cs" />
+    <Compile Include="TrackingServiceManagement\DataSourcesManagement\SceneDataSourcesManager.cs" />
+    <Compile Include="TrackingServiceManagement\DataSourcesManagement\SceneDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TrackingServiceManagement\DataSourcesManagement\SceneDataSource.cs" />
+    <Compile Include="Common\EventBasedMonoBehaviour.cs" />
+    <Compile Include="TrackingServiceManagement\Communication\TrackingServiceDiscoveryCommunicator.cs" />
+    <Compile Include="TrackingServiceManagement\DataStructures\DataStreamingServiceInfo.cs" />
+    <Compile Include="TrackingServiceManagement\DataStructures\TrackingServiceInfo.cs" />
+    <Compile Include="TrackingServiceManagement\SettingsManagement\TrackingServiceSettingsManager.cs" />
+    <Compile Include="TrackingServiceManagement\SupportStruct\TrackingServiceEnv.cs" />
+    <Compile Include="TrackingServiceManagement\SupportStruct\TrackingServiceManagersDiscoveryMode.cs" />
+    <Compile Include="TrackingServiceManagement\TrackingServiceManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrackingServiceManagement\TrackingServiceManagerBasic.cs" />
+    <Compile Include="TrackingServiceManagement\SupportStruct\TrackingServiceManagerState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Unity3d\ImmotionRoom.Tools.Unity3d\ImmotionRoom.Tools.Unity3d.csproj">
+      <Project>{fce8590d-7eaa-41af-9405-93acf9d0d9c1}</Project>
+      <Name>ImmotionRoom.Tools.Unity3d</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo f | xcopy "$(TargetPath)" "$(ProjectDir)..\..\Unity3D\IRoom.SkeletalTracking\Assets\ImmotionRoom\Plugins\" /Y
+echo f | xcopy "$(TargetDir)$(TargetName).pdb" "$(ProjectDir)..\..\Unity3D\IRoom.SkeletalTracking\Assets\ImmotionRoom\Plugins\" /Y
+"$(ProjectDir)..\..\..\Unity3D\Tools\pdb2mdb.exe" "$(ProjectDir)..\..\Unity3D\IRoom.SkeletalTracking\Assets\ImmotionRoom\Plugins\$(TargetFileName)"
+
+echo f | xcopy "$(TargetDir)ImmotionAR.ImmotionRoom.Tools.Unity3d.dll" "$(ProjectDir)..\..\Unity3D\IRoom.SkeletalTracking\Assets\ImmotionRoom\Plugins\" /Y
+echo f | xcopy "$(TargetDir)AsyncBridge.Net35.dll" "$(ProjectDir)..\..\Unity3D\IRoom.SkeletalTracking\Assets\ImmotionRoom\Plugins\" /Y
+echo f | xcopy "$(TargetDir)RestSharp.dll" "$(ProjectDir)..\..\Unity3D\IRoom.SkeletalTracking\Assets\ImmotionRoom\Plugins\" /Y
+echo f | xcopy "$(TargetDir)System.Threading.dll" "$(ProjectDir)..\..\Unity3D\IRoom.SkeletalTracking\Assets\ImmotionRoom\Plugins\" /Y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

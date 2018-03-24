@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B762CC0-B3AF-4EE7-8A10-D6EA0EECC8DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImmotionAR.ImmotionRoom.LittleBoots.VR</RootNamespace>
+    <AssemblyName>ImmotionRoom.LittleBoots.VR</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Debug\ImmotionRoom.LittleBoots.VR.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\ImmotionRoom.LittleBoots.VR.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Unity3d\Libraries\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\Unity3d\Libraries\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Common\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Calibration\CalibratingBodyAnalyzer.cs" />
+    <Compile Include="Calibration\DataManagement\CalibrationDataManager.cs" />
+    <Compile Include="Calibration\Helpers\AttachToCamera.cs" />
+    <Compile Include="Calibration\Helpers\SimpleObjectsGrid.cs" />
+    <Compile Include="Calibration\Helpers\TextMeshController.cs" />
+    <Compile Include="Calibration\IroomPlayerCalibrator.cs" />
+    <Compile Include="Calibration\IroomPlayerCalibratorInternal.cs" />
+    <Compile Include="Calibration\UI\IRoomCalibGuiManager.cs" />
+    <Compile Include="Calibration\IroomCalibratorStatus.cs" />
+    <Compile Include="Calibration\IroomHeadsetCalibrationData.cs" />
+    <Compile Include="Calibration\IroomHeadsetCalibrator.cs" />
+    <Compile Include="Calibration\UI\IroomSimple2DCalibGuiManager.cs" />
+    <Compile Include="Calibration\UI\IroomSimple2DCalibGuiManagerInternal.cs" />
+    <Compile Include="Calibration\UI\IroomSimple2DCalibGuiNoUIManager.cs" />
+    <Compile Include="Calibration\UI\IroomSimple2DCalibGuiNoUIManagerInternal.cs" />
+    <Compile Include="Girello\GirelloData.cs" />
+    <Compile Include="Girello\GirelloLimitType.cs" />
+    <Compile Include="Girello\VirtualGirello.cs" />
+    <Compile Include="Girello\VirtualGirelloInternal.cs" />
+    <Compile Include="HeadsetManagement\HeadsetManager.cs" />
+    <Compile Include="HeadsetManagement\HeadsetUserProfileData.cs" />
+    <Compile Include="HeadsetManagement\IHeadsetManager.cs" />
+    <Compile Include="Localization\Graphics\LanguageManagerLocalizedTextMesh.cs" />
+    <Compile Include="Localization\LanguageChooser.cs" />
+    <Compile Include="Localization\LanguageManager.cs" />
+    <Compile Include="Localization\ManagedLanguage.cs" />
+    <Compile Include="Localization\UI\LanguageManagerLocalizedText.cs" />
+    <Compile Include="PlayerController\IroomPlayerController.cs" />
+    <Compile Include="PlayerController\IroomPlayerControllerInternal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Watermarking\GameWatermark.cs" />
+    <Compile Include="Watermarking\GameWatermarkInternal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Unity3d\ImmotionRoom.Tools.Unity3d\ImmotionRoom.Tools.Unity3d.csproj">
+      <Project>{fce8590d-7eaa-41af-9405-93acf9d0d9c1}</Project>
+      <Name>ImmotionRoom.Tools.Unity3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Avateering\ImmotionRoom.LittleBoots.Avateering.csproj">
+      <Project>{dfd01ec7-ab1d-4c78-9b17-4ec2499e29e1}</Project>
+      <Name>ImmotionRoom.LittleBoots.Avateering</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkeletalTracking\ImmotionRoom.LittleBoots.SkeletalTracking.csproj">
+      <Project>{e941ba3d-6e7b-44a9-b056-4046ee18b0cb}</Project>
+      <Name>ImmotionRoom.LittleBoots.SkeletalTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UmaAvateering\ImmotionRoom.LittleBoots.Avateering.Uma.csproj">
+      <Project>{75186172-d371-400f-96f5-6aa739a377d4}</Project>
+      <Name>ImmotionRoom.LittleBoots.Avateering.Uma</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo f | xcopy "$(TargetPath)" "$(ProjectDir)..\..\Unity3D\IRoom.VR\Assets\ImmotionRoom\Plugins\" /Y
+echo f | xcopy "$(TargetDir)$(TargetName).pdb" "$(ProjectDir)..\..\Unity3D\IRoom.VR\Assets\ImmotionRoom\Plugins\" /Y
+"$(ProjectDir)..\..\..\Unity3D\Tools\pdb2mdb.exe" "$(ProjectDir)..\..\Unity3D\IRoom.VR\Assets\ImmotionRoom\Plugins\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

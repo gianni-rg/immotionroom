@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDD6B4D7-4745-47C3-8176-E4E8C377B7A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImmotionAR.ImmotionRoom.LittleBoots.Management</RootNamespace>
+    <AssemblyName>ImmotionRoom.LittleBoots.Management</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Threading, Version=1.0.2856.102, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Unity3d\Libraries\TaskParallelLibrary.1.0.2856.0\lib\Net35\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Unity3d\Libraries\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\Unity3d\Libraries\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Common\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="3dparties\PlayerPrefsX.cs" />
+    <Compile Include="3dparties\SphericalCoordinates.cs" />
+    <Compile Include="AdvancedAvateering\BodiesSkeletalsManagerAdvanced.cs" />
+    <Compile Include="AdvancedAvateering\SkeletalBodyAvatererAdvanced.cs" />
+    <Compile Include="AdvancedManager\Communication\DataSourcesDiscoveryCommunicator.cs" />
+    <Compile Include="AdvancedManager\Communication\TrackingServiceDiscoveryCommunicatorAdvanced.cs" />
+    <Compile Include="AdvancedManager\Reconfiguration\NetworkReconfigurator.cs" />
+    <Compile Include="AdvancedManager\SettingsManagement\DataSourcesSettingsManager.cs" />
+    <Compile Include="AdvancedManager\TrackingServiceManagerAdvanced.cs" />
+    <Compile Include="App\DataSourcesManagement\BoundsGrowingType.cs" />
+    <Compile Include="App\DataSourcesManagement\BoundsManager.cs" />
+    <Compile Include="App\DataSourcesManagement\BoundsManagerInternal.cs" />
+    <Compile Include="App\DataSourcesManagement\DataSourcesButtonManager.cs" />
+    <Compile Include="App\DataSourcesManagement\DataSourcesButtonManagerInternal.cs" />
+    <Compile Include="App\ScreenManagers\Calibration.cs" />
+    <Compile Include="App\ScreenManagers\CalibrationInternal.cs" />
+    <Compile Include="App\ScreenManagers\FirstScreen.cs" />
+    <Compile Include="App\ScreenManagers\GirelloConfigurationMobileInternal.cs" />
+    <Compile Include="App\ScreenManagers\GirelloConfigurationMobile.cs" />
+    <Compile Include="App\ScreenManagers\GirelloConfigurationPC.cs" />
+    <Compile Include="App\ScreenManagers\GirelloConfigurationPCInternal.cs" />
+    <Compile Include="App\ScreenManagers\MainMenu.cs" />
+    <Compile Include="App\ScreenManagers\MasterSetting.cs" />
+    <Compile Include="App\ScreenManagers\MasterSettingInternal.cs" />
+    <Compile Include="App\ScreenManagers\Merging.cs" />
+    <Compile Include="App\ScreenManagers\MergingInternal.cs" />
+    <Compile Include="App\ScreenManagers\NetworkReconfig.cs" />
+    <Compile Include="App\ScreenManagers\NetworkReconfigInternal.cs" />
+    <Compile Include="App\ScreenManagers\Reboot.cs" />
+    <Compile Include="App\ScreenManagers\RebootInternal.cs" />
+    <Compile Include="App\ScreenManagers\SystemInfo.cs" />
+    <Compile Include="App\ScreenManagers\SystemInfoInternal.cs" />
+    <Compile Include="App\ScreenManagers\Visualizer.cs" />
+    <Compile Include="App\ScreenManagers\VisualizerInternal.cs" />
+    <Compile Include="App\Utils\3rdparties\AutoGridLayout.cs" />
+    <Compile Include="App\Utils\AnalyticsManager.cs" />
+    <Compile Include="App\Utils\AnalyticsManagerInternal.cs" />
+    <Compile Include="App\Utils\BundleVersionReader.cs" />
+    <Compile Include="App\Utils\Vibrator.cs" />
+    <Compile Include="App\Utils\MessageBoxes\MessageBox.cs" />
+    <Compile Include="App\Utils\MoveCameraWithFingers.cs" />
+    <Compile Include="App\Utils\MoveCameraWithFingersInternal.cs" />
+    <Compile Include="App\Utils\ScenesManager.cs" />
+    <Compile Include="App\Utils\ScenesManagerInternal.cs" />
+    <Compile Include="App\Utils\UrlLinkLabel.cs" />
+    <Compile Include="App\Utils\VisualConsole\ConsoleManager.cs" />
+    <Compile Include="App\Utils\VisualConsole\ConsoleManagerInternal.cs" />
+    <Compile Include="App\Utils\WaitManager.cs" />
+    <Compile Include="App\Utils\WaitManagerInternal.cs" />
+    <Compile Include="DataStructures\TrackingSystemInfoObtainedEventArgs.cs" />
+    <Compile Include="DataStructures\AdvancedOperationEventArgs.cs" />
+    <Compile Include="DataStructures\DataSourceCollection.cs" />
+    <Compile Include="DataStructures\DataSourceInfo.cs" />
+    <Compile Include="DataStructures\DiscoveredDataSourcesEventArgs.cs" />
+    <Compile Include="DataStructures\DiscoveredServiceEventArgs.cs" />
+    <Compile Include="DataStructures\ReconfiguredServicesEventArgs.cs" />
+    <Compile Include="DataStructures\TrackingSystemConfiguration.cs" />
+    <Compile Include="DataStructures\TrackingSystemInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Unity3d\ImmotionRoom.Tools.Unity3d\ImmotionRoom.Tools.Unity3d.csproj">
+      <Project>{fce8590d-7eaa-41af-9405-93acf9d0d9c1}</Project>
+      <Name>ImmotionRoom.Tools.Unity3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Avateering\ImmotionRoom.LittleBoots.Avateering.csproj">
+      <Project>{dfd01ec7-ab1d-4c78-9b17-4ec2499e29e1}</Project>
+      <Name>ImmotionRoom.LittleBoots.Avateering</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkeletalTracking\ImmotionRoom.LittleBoots.SkeletalTracking.csproj">
+      <Project>{e941ba3d-6e7b-44a9-b056-4046ee18b0cb}</Project>
+      <Name>ImmotionRoom.LittleBoots.SkeletalTracking</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo f | xcopy "$(TargetPath)" "$(ProjectDir)..\..\Unity3D\IRoom.ManagementTool\Assets\ImmotionRoom\Plugins\" /Y
+echo f | xcopy "$(TargetDir)$(TargetName).pdb" "$(ProjectDir)..\..\Unity3D\IRoom.ManagementTool\Assets\ImmotionRoom\Plugins\" /Y
+"$(ProjectDir)..\..\..\Unity3D\Tools\pdb2mdb.exe" "$(ProjectDir)..\..\Unity3D\IRoom.ManagementTool\Assets\ImmotionRoom\Plugins\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

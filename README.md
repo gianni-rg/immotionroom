@@ -12,6 +12,8 @@ Currently the development is stopped and the source code reflects the status of 
 
 ## Build Instructions
 
+* This repository uses Git submodules to manage 3rd party depencencies. If you know Git and how to deal with submodules, simply clone this repository and do **submodule init** and **submodule update**. Anyway, 3rd party libs are also provided in binary format and referenced in the projects which use them.
+
 * We use PowerShell to build all the projects. Make sure you set the variables in the **build.ps1** script
 
 * **Visual Studio 2017 is REQUIRED to build the project**. 

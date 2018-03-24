@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{106FA87B-2786-44D1-8648-833DCAA0FC72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImmotionRoom.LittleBoots.Avateering.Uma.Editor</RootNamespace>
+    <AssemblyName>ImmotionRoom.LittleBoots.Avateering.Uma.Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\..\Unity3d\Libraries\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Unity3d\Libraries\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Common\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="UmaBodyGeneratorEditor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Unity3d\ImmotionRoom.Tools.Unity3d\ImmotionRoom.Tools.Unity3d.csproj">
+      <Project>{fce8590d-7eaa-41af-9405-93acf9d0d9c1}</Project>
+      <Name>ImmotionRoom.Tools.Unity3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Avateering\ImmotionRoom.LittleBoots.Avateering.csproj">
+      <Project>{dfd01ec7-ab1d-4c78-9b17-4ec2499e29e1}</Project>
+      <Name>ImmotionRoom.LittleBoots.Avateering</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UmaAvateering\ImmotionRoom.LittleBoots.Avateering.Uma.csproj">
+      <Project>{75186172-d371-400f-96f5-6aa739a377d4}</Project>
+      <Name>ImmotionRoom.LittleBoots.Avateering.Uma</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo f | xcopy "$(TargetPath)" "$(ProjectDir)..\..\Unity3D\IRoom.UmaAvateering\Assets\ImmotionRoom\Uma\Editor\Plugins\" /Y
+echo f | xcopy "$(TargetDir)$(TargetName).pdb" "$(ProjectDir)..\..\Unity3D\IRoom.UmaAvateering\Assets\ImmotionRoom\Uma\Editor\Plugins\" /Y
+"$(ProjectDir)..\..\..\Unity3D\Tools\pdb2mdb.exe" "$(ProjectDir)..\..\Unity3D\IRoom.UmaAvateering\Assets\ImmotionRoom\Uma\Editor\Plugins\$(TargetFileName)"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

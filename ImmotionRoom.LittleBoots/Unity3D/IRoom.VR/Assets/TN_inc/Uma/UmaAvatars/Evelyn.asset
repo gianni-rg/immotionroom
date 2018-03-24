@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9448878e2e40f1a4c9f8fd2b56832b13, type: 3}
+  m_Name: Evelyn
+  m_EditorClassIdentifier: 
+  recipeString: '{"version":2,"packedSlotDataList":[],"slotsV2":[{"id":"FemaleEyes","scale":100,"copyIdx":-1,"overlays":[{"id":"EyeOverlay","colorIdx":0,"rect":[0,0,0,0]},{"id":"EyeOverlayAdjust","colorIdx":1,"rect":[32,32,64,64]}]},{"id":"FemaleHead_Head","scale":100,"copyIdx":-1,"overlays":[{"id":"FemaleHead01","colorIdx":2,"rect":[0,0,0,0]},{"id":"FemaleEyebrow01","colorIdx":3,"rect":[384,256,256,64]},{"id":"FemaleLongHair01","colorIdx":4,"rect":[0,0,0,0]}]},{"id":"FemaleHead_Mouth","scale":100,"copyIdx":1,"overlays":[]},{"id":"FemaleHead_Eyes","scale":100,"copyIdx":1,"overlays":[]},{"id":"FemaleHead_Nose","scale":100,"copyIdx":1,"overlays":[]},{"id":"FemaleHead_Ears","scale":100,"copyIdx":1,"overlays":[]},{"id":"FemaleEyelash","scale":100,"copyIdx":-1,"overlays":[{"id":"FemaleEyelash","colorIdx":5,"rect":[0,0,0,0]}]},{"id":"FemaleTorso","scale":100,"copyIdx":-1,"overlays":[{"id":"FemaleBody01","colorIdx":2,"rect":[0,0,0,0]},{"id":"FemaleUnderwear01","colorIdx":6,"rect":[0,512,1024,512]},{"id":"FemaleJeans01","colorIdx":7,"rect":[0,0,0,0]},{"id":"FemaleShirt02","colorIdx":8,"rect":[0,512,1024,512]}]},{"id":"FemaleHands","scale":100,"copyIdx":7,"overlays":[]},{"id":"FemaleFeet","scale":100,"copyIdx":7,"overlays":[]},{"id":"FemaleInnerMouth","scale":100,"copyIdx":-1,"overlays":[{"id":"InnerMouth","colorIdx":0,"rect":[0,0,0,0]}]},{"id":"FemaleLegs","scale":100,"copyIdx":7,"overlays":[]},{"id":"FemaleTshirt01","scale":100,"copyIdx":-1,"overlays":[{"id":"FemaleTshirt01","colorIdx":9,"rect":[0,0,0,0]}]},{"id":"FemaleLongHair01","scale":100,"copyIdx":1,"overlays":[]},{"id":"FemaleLongHair01_Module","scale":100,"copyIdx":-1,"overlays":[{"id":"FemaleLongHair01_Module","colorIdx":10,"rect":[0,0,0,0]}]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]}],"colors":[],"fColors":[{"name":"-","colors":[255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"-","colors":[80,121,91,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"-","colors":[147,116,151,510,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"-","colors":[32,15,15,217,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"-","colors":[65,32,11,171,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"-","colors":[0,0,0,255,0,0,0,0]},{"name":"-","colors":[74,84,69,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"-","colors":[35,91,255,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"-","colors":[128,159,186,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"-","colors":[175,95,206,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"-","colors":[189,97,37,66,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]}],"sharedColorCount":0,"race":"HumanFemale","packedDna":[{"dnaType":"UMADnaHumanoid","dnaTypeHash":-212795365,"packedDna":"{\"height\":85,\"headSize\":126,\"headWidth\":136,\"neckThickness\":129,\"armLength\":129,\"forearmLength\":131,\"armWidth\":162,\"forearmWidth\":94,\"handsSize\":127,\"feetSize\":129,\"legSeparation\":128,\"upperMuscle\":101,\"lowerMuscle\":151,\"upperWeight\":252,\"lowerWeight\":130,\"legsSize\":127,\"belly\":29,\"waist\":103,\"gluteusSize\":189,\"earsSize\":140,\"earsPosition\":104,\"earsRotation\":166,\"noseSize\":201,\"noseCurve\":129,\"noseWidth\":203,\"noseInclination\":188,\"nosePosition\":179,\"nosePronounced\":101,\"noseFlatten\":197,\"chinSize\":161,\"chinPronounced\":140,\"chinPosition\":139,\"mandibleSize\":115,\"jawsSize\":120,\"jawsPosition\":127,\"cheekSize\":87,\"cheekPosition\":142,\"lowCheekPronounced\":202,\"lowCheekPosition\":167,\"foreheadSize\":196,\"foreheadPosition\":58,\"lipsSize\":170,\"mouthSize\":175,\"eyeRotation\":183,\"eyeSize\":186,\"breastSize\":228}"},{"dnaType":"UMADnaTutorial","dnaTypeHash":-1679007774,"packedDna":"{\"eyeSpacing\":128}"}]}'
+  recipeType: Standard
+  Sex: 0
+  DisplayValue: 
+  compatibleRaces: []
+  wardrobeRecipeThumbs: []
+  wardrobeSlot: None
+  Hides: []
+  suppressWardrobeSlots: []

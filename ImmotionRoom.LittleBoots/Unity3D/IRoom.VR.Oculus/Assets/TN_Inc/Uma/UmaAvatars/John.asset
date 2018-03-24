@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9448878e2e40f1a4c9f8fd2b56832b13, type: 3}
+  m_Name: John
+  m_EditorClassIdentifier: 
+  recipeString: '{"version":2,"packedSlotDataList":[],"slotsV2":[{"id":"MaleEyes","scale":100,"copyIdx":-1,"overlays":[{"id":"EyeOverlay","colorIdx":0,"rect":[0,0,0,0]},{"id":"EyeOverlayAdjust","colorIdx":1,"rect":[32,32,64,64]}]},{"id":"MaleFace","scale":100,"copyIdx":-1,"overlays":[{"id":"MaleHead02","colorIdx":2,"rect":[0,0,0,0]},{"id":"MaleHair02","colorIdx":3,"rect":[0,0,0,0]},{"id":"MaleEyebrow02","colorIdx":4,"rect":[384,256,256,64]}]},{"id":"MaleTorso","scale":100,"copyIdx":-1,"overlays":[{"id":"MaleBody01","colorIdx":5,"rect":[0,0,0,0]},{"id":"MaleShirt01","colorIdx":6,"rect":[0,512,1024,512]}]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]},{"id":"MaleInnerMouth","scale":100,"copyIdx":-1,"overlays":[{"id":"InnerMouth","colorIdx":7,"rect":[0,0,0,0]}]},{"id":"MaleJeans01","scale":100,"copyIdx":-1,"overlays":[{"id":"MaleJeans01","colorIdx":8,"rect":[0,0,0,0]}]},{"id":"MaleFeet","scale":100,"copyIdx":2,"overlays":[]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]},{"id":"MaleChallengerBoots","scale":100,"copyIdx":-1,"overlays":[{"id":"ChallengerBootsLeather","colorIdx":9,"rect":[0,0,0,0]}]},{"id":"MaleHands","scale":100,"copyIdx":-1,"overlays":[{"id":"ChallengerGlovesLeather","colorIdx":10,"rect":[0,0,0,0]}]}],"colors":[],"fColors":[{"name":"","colors":[255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"","colors":[50,29,7,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"","colors":[200,169,190,510,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"","colors":[24,7,2,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"","colors":[2,3,10,2,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"","colors":[202,162,173,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"","colors":[119,2,2,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"","colors":[255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"","colors":[0,34,63,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"","colors":[0,0,0,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"","colors":[43,43,43,255,0,0,0,249,0,0,0,255,0,0,0,72,0,0,0,255,0,0,0,0]}],"sharedColorCount":0,"race":"HumanMale","packedDna":[{"dnaType":"UMADnaHumanoid","dnaTypeHash":-212795365,"packedDna":"{\"height\":101,\"headSize\":134,\"headWidth\":83,\"neckThickness\":137,\"armLength\":130,\"forearmLength\":130,\"armWidth\":93,\"forearmWidth\":167,\"handsSize\":125,\"feetSize\":128,\"legSeparation\":117,\"upperMuscle\":170,\"lowerMuscle\":97,\"upperWeight\":124,\"lowerWeight\":121,\"legsSize\":134,\"belly\":153,\"waist\":128,\"gluteusSize\":112,\"earsSize\":130,\"earsPosition\":103,\"earsRotation\":133,\"noseSize\":169,\"noseCurve\":102,\"noseWidth\":139,\"noseInclination\":134,\"nosePosition\":190,\"nosePronounced\":101,\"noseFlatten\":129,\"chinSize\":115,\"chinPronounced\":86,\"chinPosition\":78,\"mandibleSize\":123,\"jawsSize\":124,\"jawsPosition\":108,\"cheekSize\":155,\"cheekPosition\":142,\"lowCheekPronounced\":158,\"lowCheekPosition\":170,\"foreheadSize\":0,\"foreheadPosition\":63,\"lipsSize\":181,\"mouthSize\":176,\"eyeRotation\":120,\"eyeSize\":126,\"breastSize\":95}"},{"dnaType":"UMADnaTutorial","dnaTypeHash":-1679007774,"packedDna":"{\"eyeSpacing\":128}"}]}'
+  recipeType: Standard
+  Sex: 0
+  DisplayValue: 
+  compatibleRaces: []
+  wardrobeRecipeThumbs: []
+  wardrobeSlot: None
+  Hides: []
+  suppressWardrobeSlots: []
